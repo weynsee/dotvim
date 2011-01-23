@@ -11,3 +11,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule update --init
+
+Dependencies
+    compile command-t extension
+    install Ack
