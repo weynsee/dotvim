@@ -38,7 +38,7 @@ syntax on
 filetype plugin indent on
 nnoremap <space> za
 
-runtime! macros/matchit.vim
+source $VIMRUNTIME/macros/matchit.vim
 
 let uname = substitute(system("uname"),"\n","","g")
 if uname == "Darwin"
