@@ -33,7 +33,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#s
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
 
-colorscheme desert
+colorscheme solarized
 syntax on
 filetype plugin indent on
 nnoremap <space> za
