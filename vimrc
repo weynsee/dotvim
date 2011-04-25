@@ -4,7 +4,6 @@ call pathogen#helptags()
 
 set nocompatible
 set nu
-set background=dark
 set cursorline
 set noerrorbells
 set clipboard+=unnamed
@@ -29,6 +28,11 @@ set wildmode=list:longest,full
 set guioptions-=T
 set laststatus=2
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c-%v\ %)%P
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
