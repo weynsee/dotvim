@@ -28,11 +28,14 @@ set wildmode=list:longest,full
 set guioptions-=T
 set laststatus=2
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c-%v\ %)%P
+set wildignore+=public/hotels/**
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
 
 colorscheme desert
+"set background=dark
+"colorscheme solarized
 syntax on
 filetype plugin indent on
 nnoremap <space> za
