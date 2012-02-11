@@ -33,10 +33,13 @@ set wildignore+=public/hotels/**
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
 
+map <Esc>[B <Down>
+set backspace=indent,eol,start
+
 colorscheme desert
 "set background=dark
 "colorscheme solarized
-syntax on
+syntax enable
 filetype plugin indent on
 nnoremap <space> za
 
