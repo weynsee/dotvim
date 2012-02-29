@@ -39,9 +39,9 @@ let NERDTreeMinimalUI=1
 map <Esc>[B <Down>
 set backspace=indent,eol,start
 
-"colorscheme desert
-colorscheme solarized
-set background=dark
+colorscheme desert
+"colorscheme solarized
+"set background=dark
 syntax enable
 filetype plugin indent on
 nnoremap <space> za
