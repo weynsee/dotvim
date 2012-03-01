@@ -37,7 +37,7 @@ let NERDTreeMinimalUI=1
 map <Esc>[B <Down>
 set backspace=indent,eol,start
 
-colorscheme molokai
+colorscheme vividchalk
 "colorscheme solarized
 "set background=dark
 syntax enable
