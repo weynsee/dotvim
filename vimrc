@@ -26,13 +26,14 @@ set wildmode=list:longest,full
 set guioptions-=T
 set laststatus=2
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c-%v\ %)%P
-set wildignore+=public/hotels/**
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/hotels/**
 set encoding=utf-8
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
 
 let NERDTreeMinimalUI=1
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 map <Esc>[B <Down>
 set backspace=indent,eol,start
