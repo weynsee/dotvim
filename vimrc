@@ -31,6 +31,7 @@ set encoding=utf-8
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
+au BufNewFile,BufRead *.jbuilder setfiletype ruby
 
 let NERDTreeMinimalUI=1
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
