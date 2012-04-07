@@ -7,7 +7,7 @@ set noerrorbells
 set clipboard+=unnamed
 set mouse=a
 set expandtab
-set nowrap
+set wrap
 set ruler
 set hidden
 set autoindent
