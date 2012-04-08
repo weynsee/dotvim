@@ -4,6 +4,7 @@ set nocompatible
 set encoding=utf-8
 set nu
 set cursorline
+set cursorcolumn
 set noerrorbells
 set clipboard+=unnamed
 set mouse=a
@@ -39,9 +40,9 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 map <Esc>[B <Down>
 set backspace=indent,eol,start
 
-"colorscheme vividchalk
-colorscheme solarized
-set background=dark
+colorscheme vividchalk
+"colorscheme solarized
+"set background=dark
 syntax enable
 filetype plugin indent on
 nnoremap <space> za
