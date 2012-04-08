@@ -1,6 +1,7 @@
 call pathogen#infect() 
 
 set nocompatible
+set encoding=utf-8
 set nu
 set cursorline
 set noerrorbells
@@ -27,7 +28,6 @@ set guioptions-=T
 set laststatus=2
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c-%v\ %)%P
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/hotels/**
-set encoding=utf-8
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
@@ -39,9 +39,9 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 map <Esc>[B <Down>
 set backspace=indent,eol,start
 
-colorscheme vividchalk
-"colorscheme solarized
-"set background=dark
+"colorscheme vividchalk
+colorscheme solarized
+set background=dark
 syntax enable
 filetype plugin indent on
 nnoremap <space> za
