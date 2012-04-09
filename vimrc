@@ -40,10 +40,11 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 map <Esc>[B <Down>
 set backspace=indent,eol,start
 
-colorscheme vividchalk
-"colorscheme solarized
-"set background=dark
+"colorscheme vividchalk
 syntax enable
+set background=dark
+let g:solarized_termcolors=256  
+colorscheme solarized
 filetype plugin indent on
 nnoremap <space> za
 
