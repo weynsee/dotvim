@@ -46,3 +46,6 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = git://github.com/chrisbra/csv.vim.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/juvenn/mustache.vim.git
