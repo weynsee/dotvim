@@ -43,8 +43,8 @@ set backspace=indent,eol,start
 "colorscheme vividchalk
 syntax enable
 set background=dark
-let g:solarized_termcolors=256  
-colorscheme solarized
+"let g:solarized_termcolors=256  
+colorscheme Tomorrow-Night-Bright
 filetype plugin indent on
 nnoremap <space> za
 
