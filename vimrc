@@ -22,6 +22,7 @@ set shiftwidth=4
 set softtabstop=4
 set showmatch
 set showcmd
+set colorcolumn=80
 set title
 set wildmenu
 set wildmode=list:longest,full
