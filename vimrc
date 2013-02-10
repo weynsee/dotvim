@@ -50,7 +50,6 @@ filetype plugin indent on
 nnoremap <space> za
 
 source $VIMRUNTIME/macros/matchit.vim
-let g:SuperTabDefaultCompletionType="context"
 
 let uname = substitute(system("uname"),"\n","","g")
 if uname == "Darwin"
