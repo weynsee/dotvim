@@ -43,9 +43,6 @@
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = git://github.com/epmatsw/ag.vim.git
-[submodule "bundle/UltiSnips"]
-	path = bundle/UltiSnips
-	url = git://github.com/vim-scripts/UltiSnips.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
@@ -55,6 +52,3 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = git://github.com/Valloric/YouCompleteMe.git
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
