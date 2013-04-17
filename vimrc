@@ -66,6 +66,7 @@ if has("autocmd")
     " strip trailing whitespaces
     autocmd FileType java,ruby autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
+    autocmd FileType eruby setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType coffee setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType mustache setlocal ts=2 sts=2 sw=2 expandtab
