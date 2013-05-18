@@ -49,3 +49,9 @@
 [submodule "bundle/vim-rake"]
 	path = bundle/vim-rake
 	url = git://github.com/tpope/vim-rake.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = git://github.com/mattn/gist-vim.git
