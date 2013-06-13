@@ -1,6 +1,7 @@
 call pathogen#infect() 
 
 set nocompatible
+set shell=sh
 set encoding=utf-8
 set nu
 set cursorline
