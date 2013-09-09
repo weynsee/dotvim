@@ -34,6 +34,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,public/hotels/**,.DS_Store
 
 au BufNewFile,BufRead *.thor setfiletype ruby
 au BufNewFile,BufRead Thorfile setfiletype ruby
+au BufNewFile,BufRead Guardfile setfiletype ruby
 au BufNewFile,BufRead *.jbuilder setfiletype ruby
 
 let NERDTreeMinimalUI=1
