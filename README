@@ -1,6 +1,6 @@
 Installation:
 
-    git clone git://github.com/weynsee/dotvim.git ~/.vim
+    Clone this repo
 
 Create symlinks:
 
@@ -13,5 +13,5 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule update --init
 
 Dependencies
-    compile command-t extension
-    install Ack
+    brew install the_silver_searcher (OS X) or apt-get install silversearcher-ag (Ubuntu)
+    cd ~/.vim/bundle/YouCompleteMe && ./install.sh
