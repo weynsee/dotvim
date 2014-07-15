@@ -1,4 +1,4 @@
-execute pathogen#infect() 
+execute pathogen#infect()
 
 set nocompatible
 set shell=sh
@@ -46,8 +46,9 @@ set backspace=indent,eol,start
 "colorscheme vividchalk
 syntax enable
 set background=dark
-"let g:solarized_termcolors=256  
-colorscheme Tomorrow-Night-Bright
+let g:solarized_termcolors=256
+"colorscheme Tomorrow-Night-Bright
+colorscheme solarized
 filetype plugin indent on
 nnoremap <space> za
 
@@ -66,7 +67,7 @@ if has("autocmd")
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
     " strip trailing whitespaces
-    autocmd FileType java,ruby autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+    autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
     autocmd FileType eruby setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType coffee setlocal ts=2 sts=2 sw=2 expandtab
@@ -82,6 +83,20 @@ endif
 
 set statusline+=%#warningmsg#
 set statusline+=%*
+
+function! <SID>StripTrailingWhitespaces()
+  " preparation: save last search, and cursor position
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+
+  " do the business
+  %s/\s\+$//e
+
+  " clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
 
 let mapleader=','
 map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
