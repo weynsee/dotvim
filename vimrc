@@ -39,7 +39,15 @@ au BufNewFile,BufRead *.jbuilder setfiletype ruby
 
 let NERDTreeMinimalUI=1
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
+"neocomplete
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 map <Esc>[B <Down>
 set backspace=indent,eol,start
@@ -63,6 +71,13 @@ elseif uname == "Linux"
 endif
 
 if has("autocmd")
+    " setup omnicomplete
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType html,markdown,eruby setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
     " Syntax of these languages is fussy over tabs Vs spaces
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
