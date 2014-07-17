@@ -39,6 +39,7 @@ au BufNewFile,BufRead *.jbuilder setfiletype ruby
 
 let NERDTreeMinimalUI=1
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:neocomplete#enable_at_startup = 1
 
 map <Esc>[B <Down>
 set backspace=indent,eol,start

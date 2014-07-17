@@ -64,3 +64,6 @@
 [submodule "bundle/vim-turbux"]
 	path = bundle/vim-turbux
 	url = https://github.com/jgdavey/vim-turbux.git
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
