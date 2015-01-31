@@ -140,4 +140,23 @@ map <leader>vi :VimuxInspectRunner<CR>
 map <leader>vq :VimuxCloseRunner<CR>
 map <leader>vx :VimuxInterruptRunner<CR>
 
+" snippets
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+nmap <F8> :TagbarToggle<CR>
+
 cmap w!! %!sudo tee > /dev/null %
