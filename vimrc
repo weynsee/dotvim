@@ -51,6 +51,10 @@ au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
 let NERDTreeMinimalUI=1
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
